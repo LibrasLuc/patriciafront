@@ -158,7 +158,7 @@ function Hero() {
         <div>
           <div className="flex items-center gap-2 mb-8">
             <div className="w-8 h-px bg-[#c9a96e]" />
-            <span className="text-[#c9a96e] text-xs tracking-[0.3em] uppercase font-medium">Patricia Cordeiro - Advogada</span>
+            <span className="text-[#c9a96e] text-xs tracking-[0.3em] uppercase font-medium">Patricia Cordeiro Benze</span>
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-semibold leading-tight mb-6">
             Direito ao<br />

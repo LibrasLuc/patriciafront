@@ -201,7 +201,7 @@ function Hero() {
         <div className="flex items-center justify-center">
           <div className="relative w-64 h-80 xl:w-80 xl:h-[30rem]">
             <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" className="w-full h-full object-cover rounded-sm shadow-2xl" />
-            <div className="absolute -bottom-5 -left-5 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
+            <div className="absolute -bottom-5 -right-5 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
           <blockquote className="hidden">
             <p className="text-white/60 text-sm italic font-serif leading-relaxed">"O Direito ganha sentido<br />quando serve às pessoas."</p>

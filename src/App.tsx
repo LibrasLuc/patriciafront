@@ -372,10 +372,10 @@ function Areas() {
                 <p className="text-[#0d2340]/55 group-hover:text-white/60 text-sm leading-relaxed transition-colors duration-300">
                   {a.desc}
                 </p>
-                <div className="mt-6 flex items-center gap-1 text-[#c9a96e] text-xs tracking-wide">
+                <a href={WA} target="_blank" rel="noopener noreferrer" className="mt-6 flex items-center gap-1 text-[#c9a96e] text-xs tracking-wide">
                   Saiba mais
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="group-hover:translate-x-1 transition-transform duration-300"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </div>
+                </a>
               </div>
             </FadeUp>
           ))}

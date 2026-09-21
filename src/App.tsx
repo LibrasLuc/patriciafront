@@ -103,7 +103,7 @@ function Nav() {
     return () => window.removeEventListener('scroll', h)
   }, [])
   return (
-    <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 nav-glass ${scrolled ? 'bg-[#0d2340]/95 shadow-xl shadow-black/20' : 'bg-transparent'}`}>
+    <nav className="fixed top-0 inset-x-0 z-50 bg-white shadow-md transition-all duration-500 nav-glass">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Logo light />
         <ul className="hidden lg:flex items-center gap-8">
@@ -111,7 +111,7 @@ function Nav() {
             <li key={l}>
               <a
                 href={`#${l.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ã/g, 'a').replace(/ç/g, 'c')}`}
-                className="text-white/70 hover:text-[#c9a96e] text-sm tracking-wide transition-colors duration-200"
+                className="text-[#0d2340]/75 hover:text-[#c9a96e] text-sm tracking-wide transition-colors duration-200"
               >
                 {l}
               </a>
@@ -121,7 +121,7 @@ function Nav() {
         <div className="hidden lg:block">
           <WaButton label="Consulta Gratuita" />
         </div>
-        <button className="lg:hidden text-white p-2" onClick={() => setOpen(!open)}>
+        <button className="lg:hidden text-[#0d2340] p-2" onClick={() => setOpen(!open)}>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
             {open ? <path d="M6 18L18 6M6 6l12 12" /> : <path d="M3 6h18M3 12h18M3 18h18" />}
           </svg>

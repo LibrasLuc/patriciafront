@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, ReactNode } from 'react'
-import benzeLogo from './assets/benze-logo.png'
+import benzeLogo from './assets/benze-logo-transparent.png'
 
 const WA = `https://wa.me/5534988138499?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Patricia Cordeiro - Advogada.')}`
 

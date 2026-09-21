@@ -82,12 +82,9 @@ function WaIcon({ size = 18 }: { size?: number }) {
 /* ─── Logo ───────────────────────────────────────────────────────── */
 function Logo({ light = false }: { light?: boolean }) {
   return (
-    <img
-      src={benzeLogo}
-      alt="Benze Advocacia"
-      className={`h-12 w-auto object-contain select-none rounded-sm ${light ? 'bg-white' : ''}`}
-      style={{ maxWidth: 220 }}
-    />
+    <a href="#inicio" aria-label="Voltar ao início">
+      <img src={benzeLogo} alt="Benze Advocacia" className={`h-12 w-auto object-contain select-none rounded-sm ${light ? 'bg-white' : ''}`} style={{ maxWidth: 220 }} />
+    </a>
   )
 }
 
@@ -97,13 +94,20 @@ const navLinks = ['Sobre', 'Áreas', 'Diferenciais', 'Depoimentos', 'Localizaç�
 function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const [visible, setVisible] = useState(true)
   useEffect(() => {
-    const h = () => setScrolled(window.scrollY > 40)
+    let previous = window.scrollY
+    const h = () => {
+      const current = window.scrollY
+      setScrolled(current > 40)
+      setVisible(current < previous || current < 80)
+      previous = current
+    }
     window.addEventListener('scroll', h, { passive: true })
     return () => window.removeEventListener('scroll', h)
   }, [])
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 bg-white shadow-md transition-all duration-500 nav-glass">
+    <nav className={`fixed top-0 inset-x-0 z-50 bg-white shadow-md transition-all duration-500 nav-glass ${visible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Logo light />
         <ul className="hidden lg:flex items-center gap-8">
@@ -142,7 +146,7 @@ function Nav() {
 /* ─── Hero ───────────────────────────────────────────────────────── */
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0d2340]">
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden bg-[#0d2340]">
       {/* Background image */}
       <div className="absolute inset-0">
         <img

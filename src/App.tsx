@@ -226,7 +226,7 @@ function AnimatedStat({ value, suffix = '' }: { value: number; suffix?: string }
     const observer = new IntersectionObserver(([entry]) => {
       if (!entry.isIntersecting) return
       observer.disconnect()
-      const duration = 1200
+      const duration = 3500
       const startedAt = performance.now()
       const tick = (now: number) => {
         const progress = Math.min((now - startedAt) / duration, 1)

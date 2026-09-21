@@ -324,7 +324,7 @@ function Location() {
               <div>
                 <div className="text-[#c9a96e] text-xs tracking-[0.25em] uppercase mb-5">Endereço do escritório</div>
                 <h3 className="font-serif text-3xl text-white leading-snug mb-6">Estamos prontos para ouvir você.</h3>
-                <p className="text-white/60 text-sm leading-relaxed">R. Nacib Cury, 233 — Sala 08<br />São Sebastião, Uberaba — MG<br />CEP 38060-380</p>
+                <p className="text-white/60 text-sm leading-relaxed">R. Nacib Cury, 233<br />São Sebastião, Uberaba — MG<br />CEP 38060-380</p>
               </div>
               <a href="https://www.google.com/maps/search/?api=1&query=R.%20Nacib%20Cury%2C%20233%2C%20Uberaba%20-%20MG" target="_blank" rel="noopener noreferrer" className="inline-flex w-fit items-center gap-2 mt-8 px-5 py-3 rounded-full bg-[#c9a96e] text-[#0d2340] text-sm font-medium hover:bg-[#e8d5b0] transition-colors">Abrir no Google Maps <span>→</span></a>
             </div>
@@ -615,7 +615,7 @@ function Footer() {
             <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Contato</div>
             <ul className="space-y-2 text-white/40 text-xs">
               <li>(34) 98813-8499</li>
-              <li>R. Nacib Cury, 233 — Sala 08</li>
+              <li>R. Nacib Cury, 233</li>
               <li>São Sebastião, Uberaba — MG, 38060-380</li>
               <li><a className="text-[#c9a96e] hover:text-white transition-colors" href="https://www.google.com/maps/search/?api=1&query=R.%20Nacib%20Cury%2C%20233%2C%20Uberaba%20-%20MG" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a></li>
             </ul>

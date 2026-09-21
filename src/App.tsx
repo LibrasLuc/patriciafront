@@ -289,7 +289,7 @@ function About() {
         <FadeUp delay={150}>
           <div className="text-[#c9a96e] text-xs tracking-[0.3em] uppercase mb-4">Sobre o escritório</div>
           <h2 className="font-serif text-4xl text-[#0d2340] font-semibold leading-snug mb-6 gold-line">
-            Mais que leis,<br />pessoas.
+            Quem é Patricia?
           </h2>
           <p className="text-[#0d2340]/60 leading-relaxed mb-6">
             Patricia Cordeiro Lima Mota Benze atua em Direito Civil, Direito de Família e Direito do Consumidor, oferecendo atendimento jurídico personalizado em Uberaba/MG e também de forma online.
@@ -349,9 +349,12 @@ function Location() {
 
 /* ─── Practice Areas ─────────────────────────────────────────────── */
 const areas = [
-  { title: 'Direito de Família', desc: 'Divórcios, inventários, partilha de bens, guarda, pensão e união estável.' },
-  { title: 'Direito Civil', desc: 'Contratos, cobranças, indenizações e demais questões cíveis.' },
-  { title: 'Direito do Consumidor', desc: 'Negativação indevida, descontos indevidos e relações de consumo.' },
+  { title: 'Inventário e Partilha', desc: 'Orientação completa para inventários judiciais e extrajudiciais, partilha de bens e questões entre herdeiros.' },
+  { title: 'Divórcio e Família', desc: 'Divórcio consensual ou litigioso, guarda, pensão, união estável e partilha de patrimônio.' },
+  { title: 'Negativação Indevida', desc: 'Atuação em situações envolvendo inscrição ou manutenção indevida do nome em cadastros de inadimplentes.' },
+  { title: 'Descontos Indevidos', desc: 'Análise de empréstimos, cobranças e descontos não reconhecidos em benefícios e contas bancárias.' },
+  { title: 'Problemas com Veículos', desc: 'Defeitos, garantia, compra e venda, vícios do veículo e conflitos com concessionárias e fornecedores.' },
+  { title: 'Contratos e Indenizações', desc: 'Análise contratual, descumprimento de contratos, cobranças e responsabilidade civil.' },
 ]
 
 function Areas() {
@@ -365,7 +368,7 @@ function Areas() {
               Soluções para cada<br />momento da sua vida.
             </h2>
           </div>
-          <WaButton label="Agendar Consulta" variant="dark" />
+          <WaButton label="Ver todas as áreas de atuação" variant="dark" />
         </FadeUp>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {areas.map((a, i) => (
@@ -439,9 +442,10 @@ function Diferenciais() {
 
 /* ─── How It Works ───────────────────────────────────────────────── */
 const steps = [
-  { n: '1', title: 'Primeiro contato', desc: 'Fale pelo WhatsApp ou preencha o formulário.' },
-  { n: '2', title: 'Análise do caso', desc: 'Entendemos sua necessidade e avaliamos o melhor caminho.' },
-  { n: '3', title: 'Orientação jurídica', desc: 'Você recebe a estratégia e acompanhamento em todas as etapas.' },
+  { n: '1', title: 'Entre em contato', desc: 'Conte brevemente sua situação pelo WhatsApp.' },
+  { n: '2', title: 'Análise do caso', desc: 'Após conhecer o problema e a documentação disponível, será indicada a forma adequada de atendimento.' },
+  { n: '3', title: 'Orientação jurídica', desc: 'Você receberá orientação sobre as possibilidades jurídicas e os próximos passos.' },
+  { n: '4', title: 'Acompanhamento', desc: 'Sendo necessária atuação jurídica, o caso será acompanhado em todas as etapas contratadas.' },
 ]
 
 function HowItWorks() {
@@ -451,8 +455,9 @@ function HowItWorks() {
         <FadeUp className="text-center mb-16">
           <div className="text-[#c9a96e] text-xs tracking-[0.3em] uppercase mb-3">Como funciona</div>
           <h2 className="font-serif text-4xl text-[#0d2340] font-semibold">
-            Simples, claro e eficiente.
+            Precisa de orientação jurídica?
           </h2>
+          <p className="text-[#0d2340]/55 text-sm mt-4">Atendimento presencial em Uberaba/MG ou online, de onde você estiver.</p>
         </FadeUp>
         <div className="grid md:grid-cols-3 gap-8 relative">
           {/* connecting line */}
@@ -470,7 +475,7 @@ function HowItWorks() {
           ))}
         </div>
         <FadeUp className="text-center mt-12">
-          <WaButton label="Começar agora" />
+          <WaButton label="Iniciar atendimento" />
         </FadeUp>
       </div>
     </section>
@@ -656,11 +661,11 @@ export default function App() {
       <Nav />
       <Hero />
       <StatsStrip />
-      <About />
       <Areas />
+      <About />
+      <Testimonials />
       <Diferenciais />
       <HowItWorks />
-      <Testimonials />
       <Location />
       <FAQ />
       <FinalCTA />

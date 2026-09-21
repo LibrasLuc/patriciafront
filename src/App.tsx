@@ -459,9 +459,9 @@ function HowItWorks() {
           </h2>
           <p className="text-[#0d2340]/55 text-sm mt-4">Atendimento presencial em Uberaba/MG ou online, de onde você estiver.</p>
         </FadeUp>
-        <div className="grid md:grid-cols-3 gap-8 relative">
+        <div className="grid md:grid-cols-4 gap-8 relative">
           {/* connecting line */}
-          <div className="hidden md:block absolute top-10 left-[calc(16.66%-1px)] right-[calc(16.66%-1px)] h-px bg-[#c9a96e]/30" />
+          <div className="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] h-px bg-[#c9a96e]/30" />
           {steps.map((s, i) => (
             <FadeUp key={i} delay={i * 120}>
               <div className="relative flex flex-col items-center text-center px-6">

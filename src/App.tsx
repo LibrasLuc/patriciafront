@@ -282,7 +282,7 @@ function About() {
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <FadeUp>
           <div className="relative">
-            <img src={patriciaPhoto} alt="Patricia Benze em seu escritório" className="w-full h-[480px] object-cover rounded-sm" />
+            <img src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=600&h=720&fit=crop&auto=format" alt="Justiça e advocacia" className="w-full h-[480px] object-cover rounded-sm" />
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
         </FadeUp>

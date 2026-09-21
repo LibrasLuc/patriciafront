@@ -195,15 +195,6 @@ function Hero() {
           <div className="text-white/75 text-sm md:text-base tracking-wide mb-6">
             Divórcio <span className="text-[#c9a96e]">•</span> Inventário <span className="text-[#c9a96e]">•</span> Consumidor <span className="text-[#c9a96e]">•</span> Indenizações <span className="text-[#c9a96e]">•</span> Contratos
           </div>
-          {/* Trust badges */}
-          <div className="flex flex-wrap gap-6 text-white/50 text-xs tracking-wide">
-            {['R. Nacib Cury, 233 — Uberaba/MG', 'Online e presencial', 'Sigilo garantido'].map((t, i) => (
-              <span key={i} className="flex items-center gap-1.5">
-                <div className="w-1 h-1 rounded-full bg-[#c9a96e]" />
-                {t}
-              </span>
-            ))}
-          </div>
         </div>
 
         {/* Right: visual */}

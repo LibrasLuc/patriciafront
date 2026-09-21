@@ -85,8 +85,8 @@ function Logo({ light = false }: { light?: boolean }) {
     <img
       src={benzeLogo}
       alt="Benze Advocacia"
-      className={`h-11 w-auto object-contain select-none rounded-sm ${light ? 'bg-white' : ''}`}
-      style={{ maxWidth: 178 }}
+      className={`h-12 w-auto object-contain select-none rounded-sm ${light ? 'bg-white' : ''}`}
+      style={{ maxWidth: 220 }}
     />
   )
 }

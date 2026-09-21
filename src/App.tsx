@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, ReactNode } from 'react'
+import benzeLogo from './assets/benze-logo.png'
 
 const WA = `https://wa.me/5534988138499?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Patricia Cordeiro - Advogada.')}`
 
@@ -81,10 +82,12 @@ function WaIcon({ size = 18 }: { size?: number }) {
 /* ─── Logo ───────────────────────────────────────────────────────── */
 function Logo({ light = false }: { light?: boolean }) {
   return (
-    <div className={`select-none leading-none ${light ? 'text-white' : 'text-[#0d2340]'}`} aria-label="Patricia Cordeiro - Advogada">
-      <div className="font-serif text-lg tracking-wide">PATRICIA CORDEIRO</div>
-      <div className="text-[9px] tracking-[0.28em] text-[#c9a96e] mt-1">ADVOGADA</div>
-    </div>
+    <img
+      src={benzeLogo}
+      alt="Benze Advocacia"
+      className={`h-11 w-auto object-contain select-none rounded-sm ${light ? 'bg-white' : ''}`}
+      style={{ maxWidth: 178 }}
+    />
   )
 }
 

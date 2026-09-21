@@ -210,11 +210,37 @@ function Hero() {
 
 /* ─── Stats Strip ────────────────────────────────────────────────── */
 const stats = [
-  { value: 'Uberaba', label: 'Minas Gerais' },
-  { value: 'Online', label: 'Atendimento em todo o Brasil' },
-  { value: '3', label: 'Áreas principais de atuação' },
-  { value: '18h', label: 'Encerramento do atendimento' },
+  { value: 15, suffix: '+', label: 'Anos no mercado' },
+  { value: 500, suffix: '+', label: 'Processos acompanhados' },
+  { value: 3, suffix: '', label: 'Áreas principais de atuação' },
+  { value: 18, suffix: 'h', label: 'Encerramento do atendimento' },
 ]
+
+function AnimatedStat({ value, suffix = '' }: { value: number; suffix?: string }) {
+  const [current, setCurrent] = useState(0)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const element = ref.current
+    if (!element) return
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return
+      observer.disconnect()
+      const duration = 1200
+      const startedAt = performance.now()
+      const tick = (now: number) => {
+        const progress = Math.min((now - startedAt) / duration, 1)
+        setCurrent(Math.floor(progress * value))
+        if (progress < 1) requestAnimationFrame(tick)
+      }
+      requestAnimationFrame(tick)
+    }, { threshold: 0.4 })
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [value])
+
+  return <div ref={ref} className="font-serif text-3xl text-[#c9a96e] font-semibold">{current}{suffix}</div>
+}
 
 function StatsStrip() {
   return (
@@ -222,7 +248,7 @@ function StatsStrip() {
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((s, i) => (
           <FadeUp key={i} delay={i * 80} className="text-center">
-            <div className="font-serif text-3xl text-[#c9a96e] font-semibold">{s.value}</div>
+            <AnimatedStat value={s.value} suffix={s.suffix} />
             <div className="text-white/50 text-xs tracking-wide mt-1">{s.label}</div>
           </FadeUp>
         ))}

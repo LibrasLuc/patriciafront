@@ -189,17 +189,13 @@ function Hero() {
           </div>
         </div>
 
-        {/* Right: animated scales */}
+        {/* Right: photo placeholder */}
         <div className="hidden lg:flex flex-col items-center justify-center">
-          <div className="w-64 h-64 xl:w-80 xl:h-80 opacity-70">
-            <AnimatedScales />
+          <div className="w-64 h-80 xl:w-80 xl:h-[420px] rounded-sm border-2 border-dashed border-[#c9a96e]/60 bg-white/5 flex flex-col items-center justify-center text-center px-8">
+            <div className="w-20 h-20 rounded-full border border-[#c9a96e]/70 flex items-center justify-center mb-5 text-[#c9a96e] text-3xl">+</div>
+            <span className="text-white/60 text-sm">Espaço para foto da Patricia</span>
+            <span className="text-white/35 text-xs mt-2">Foto profissional em destaque</span>
           </div>
-          <blockquote className="mt-6 text-center max-w-xs">
-            <p className="text-white/60 text-sm italic font-serif leading-relaxed">
-              "O Direito ganha sentido<br />quando serve às pessoas."
-            </p>
-            <cite className="block mt-3 text-[#c9a96e] text-xs tracking-widest uppercase not-italic">Patricia Cordeiro</cite>
-          </blockquote>
         </div>
       </div>
 
@@ -272,9 +268,6 @@ function About() {
               <span className="text-[#0d2340]/30 text-xs mt-2">Adicione uma foto profissional aqui</span>
             </div>
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
-            <div className="mt-6 h-28 rounded-sm border border-dashed border-[#c9a96e]/40 bg-white flex items-center justify-center text-[#0d2340]/35 text-xs tracking-wide">
-              Espaço para foto do escritório
-            </div>
           </div>
         </FadeUp>
         <FadeUp delay={150}>

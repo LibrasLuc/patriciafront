@@ -92,7 +92,7 @@ function Logo({ light = false }: { light?: boolean }) {
 }
 
 /* ─── Navigation ────────────────────────────────────────────────── */
-const navLinks = ['Sobre', 'Áreas', 'Diferenciais', 'Depoimentos', 'FAQ']
+const navLinks = ['Sobre', 'Áreas', 'Diferenciais', 'Depoimentos', 'Localização', 'FAQ']
 
 function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -266,11 +266,11 @@ function About() {
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <FadeUp>
           <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=600&h=720&fit=crop&auto=format"
-              alt="Patricia Cordeiro — advogada"
-              className="w-full h-[480px] object-cover rounded-sm"
-            />
+            <div className="w-full h-[480px] rounded-sm border-2 border-dashed border-[#c9a96e]/50 bg-white flex flex-col items-center justify-center text-center px-8">
+              <div className="w-20 h-20 rounded-full border border-[#c9a96e]/60 flex items-center justify-center mb-5 text-[#c9a96e] text-3xl">+</div>
+              <span className="text-[#0d2340]/45 text-sm">Espaço reservado para foto da Patricia</span>
+              <span className="text-[#0d2340]/30 text-xs mt-2">Adicione uma foto profissional aqui</span>
+            </div>
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
         </FadeUp>
@@ -294,6 +294,42 @@ function About() {
           </ul>
           <WaButton label="Fale Conosco" variant="dark" />
         </FadeUp>
+      </div>
+    </section>
+  )
+}
+
+function Location() {
+  return (
+    <section id="localizacao" className="py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <FadeUp className="mb-12">
+          <div className="text-[#c9a96e] text-xs tracking-[0.3em] uppercase mb-3">Onde estamos</div>
+          <h2 className="font-serif text-4xl text-[#0d2340] font-semibold gold-line">Atendimento em Uberaba.</h2>
+        </FadeUp>
+        <div className="grid lg:grid-cols-2 gap-8 items-stretch">
+          <FadeUp>
+            <div className="h-full min-h-[360px] rounded-sm overflow-hidden border border-[#ede9e0] bg-[#f7f5f0]">
+              <iframe
+                title="Localização da Patricia Cordeiro - Advogada"
+                src="https://www.google.com/maps?q=R.%20Nacib%20Cury%2C%20233%2C%20Uberaba%20-%20MG&output=embed"
+                className="w-full h-full min-h-[360px] border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </FadeUp>
+          <FadeUp delay={120}>
+            <div className="h-full min-h-[360px] bg-[#0d2340] rounded-sm p-8 md:p-10 flex flex-col justify-between">
+              <div>
+                <div className="text-[#c9a96e] text-xs tracking-[0.25em] uppercase mb-5">Endereço do escritório</div>
+                <h3 className="font-serif text-3xl text-white leading-snug mb-6">Estamos prontos para ouvir você.</h3>
+                <p className="text-white/60 text-sm leading-relaxed">R. Nacib Cury, 233 — Sala 08<br />São Sebastião, Uberaba — MG<br />CEP 38060-380</p>
+              </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=R.%20Nacib%20Cury%2C%20233%2C%20Uberaba%20-%20MG" target="_blank" rel="noopener noreferrer" className="inline-flex w-fit items-center gap-2 mt-8 px-5 py-3 rounded-full bg-[#c9a96e] text-[#0d2340] text-sm font-medium hover:bg-[#e8d5b0] transition-colors">Abrir no Google Maps <span>→</span></a>
+            </div>
+          </FadeUp>
+        </div>
       </div>
     </section>
   )
@@ -606,6 +642,7 @@ export default function App() {
       <Diferenciais />
       <HowItWorks />
       <Testimonials />
+      <Location />
       <FAQ />
       <FinalCTA />
       <Footer />

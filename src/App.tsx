@@ -520,10 +520,15 @@ function Testimonials() {
 
 /* ─── FAQ ────────────────────────────────────────────────────────── */
 const faqs = [
-  { q: 'O atendimento pode ser feito online?', a: 'Sim. Atendemos presencialmente em Uberaba/MG e também de forma online para clientes de todo o Brasil.' },
-  { q: 'Quais documentos preciso para a consulta?', a: 'Depende do caso. Na maioria das situações, RG, CPF e documentos relacionados ao seu problema são suficientes para o primeiro atendimento.' },
-  { q: 'Como agendo uma consulta?', a: 'Pelo WhatsApp ou pelo formulário em nosso site. Retornamos em até 24 horas.' },
-  { q: 'Vocês atendem outras cidades?', a: 'Sim. Prestamos consultoria jurídica para clientes em todo o Brasil de forma remota.' },
+  { q: 'O atendimento pode ser realizado online?', a: 'Sim.' },
+  { q: 'Atende clientes de outras cidades e estados?', a: 'Sim.' },
+  { q: 'Como funciona o primeiro atendimento?', a: 'Pode ser feito presencialmente ou por chamada de vídeo.' },
+  { q: 'Quais documentos preciso enviar?', a: 'Não há necessidade de envio de documentos.' },
+  { q: 'Meu caso necessariamente precisa de processo judicial?', a: 'Essa avaliação será feita no primeiro atendimento.' },
+  { q: 'É possível fazer inventário em cartório?', a: 'Sim, temos que avaliar se é economicamente viável.' },
+  { q: 'Quanto tempo tenho para iniciar um inventário?', a: 'O Código Civil dispõe que o prazo é de 60 dias contados da data do falecimento.' },
+  { q: 'É possível fazer divórcio em cartório?', a: 'Sim, atendidos alguns requisitos.' },
+  { q: 'O que fazer quando meu nome é negativado indevidamente?', a: 'Comprovada a negativação indevida, o próximo passo é buscar a orientação de um profissional.' },
 ]
 
 function FAQ() {

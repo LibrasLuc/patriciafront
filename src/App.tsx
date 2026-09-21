@@ -180,7 +180,7 @@ function Hero() {
           </div>
           {/* Trust badges */}
           <div className="flex flex-wrap gap-6 text-white/50 text-xs tracking-wide">
-            {['Online e presencial', 'Sigilo garantido', 'Em todo o Brasil'].map((t, i) => (
+            {['R. Nacib Cury, 233 — Uberaba/MG', 'Online e presencial', 'Sigilo garantido'].map((t, i) => (
               <span key={i} className="flex items-center gap-1.5">
                 <div className="w-1 h-1 rounded-full bg-[#c9a96e]" />
                 {t}
@@ -216,7 +216,6 @@ const stats = [
   { value: 15, suffix: '+', label: 'Anos no mercado' },
   { value: 500, suffix: '+', label: 'Processos acompanhados' },
   { value: 3, suffix: '', label: 'Áreas principais de atuação' },
-  { value: 18, suffix: 'h', label: 'Encerramento do atendimento' },
 ]
 
 function AnimatedStat({ value, suffix = '' }: { value: number; suffix?: string }) {
@@ -248,7 +247,7 @@ function AnimatedStat({ value, suffix = '' }: { value: number; suffix?: string }
 function StatsStrip() {
   return (
     <section className="bg-[#1b3a4b] py-10">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-3 gap-8">
         {stats.map((s, i) => (
           <FadeUp key={i} delay={i * 80} className="text-center">
             <AnimatedStat value={s.value} suffix={s.suffix} />
@@ -561,7 +560,7 @@ function Footer() {
   return (
     <footer className="bg-[#080f1a] py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-white/10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-10 border-b border-white/10">
           <div>
             <Logo light />
             <p className="text-white/40 text-xs leading-relaxed mt-4 max-w-xs">
@@ -580,19 +579,10 @@ function Footer() {
             <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Contato</div>
             <ul className="space-y-2 text-white/40 text-xs">
               <li>(34) 98813-8499</li>
-              <li>R. Nacib Cury, 229 — Sala 08</li>
+              <li>R. Nacib Cury, 233 — Sala 08</li>
               <li>São Sebastião, Uberaba — MG, 38060-380</li>
+              <li><a className="text-[#c9a96e] hover:text-white transition-colors" href="https://www.google.com/maps/search/?api=1&query=R.%20Nacib%20Cury%2C%20233%2C%20Uberaba%20-%20MG" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a></li>
             </ul>
-          </div>
-          <div>
-            <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Siga-nos</div>
-            <div className="flex gap-3">
-              {['IG', 'IN', 'YT'].map(s => (
-                <a key={s} href="#" className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-white/40 text-xs hover:border-[#c9a96e] hover:text-[#c9a96e] transition-all duration-200">
-                  {s}
-                </a>
-              ))}
-            </div>
           </div>
         </div>
         <div className="pt-6 flex flex-col sm:flex-row justify-between gap-3 text-white/25 text-xs">

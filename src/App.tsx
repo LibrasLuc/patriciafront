@@ -166,15 +166,24 @@ function Hero() {
             <span className="text-[#c9a96e] text-xs tracking-[0.3em] uppercase font-medium">Patricia Cordeiro Benze</span>
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-semibold leading-tight mb-6">
-            Direito ao<br />
-            seu lado,<br />
-            <em className="text-[#c9a96e] not-italic">sempre.</em>
+            Patricia Cordeiro<br /><em className="text-[#c9a96e] not-italic">Benze</em>
           </h1>
-          <p className="text-white/60 text-base md:text-lg leading-relaxed mb-10 max-w-md">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 max-w-md">
+            Atendimento presencial em Uberaba/MG e online em todo o Brasil.
+          </p>
+          <p className="hidden text-white/60 text-base md:text-lg leading-relaxed mb-10 max-w-md">
             Atendimento jurídico personalizado em Uberaba/MG e online, com clareza, ética e atenção individual ao seu caso.
           </p>
-          <div className="flex flex-wrap gap-3 mb-12">
-            <WaButton label="Fale no WhatsApp" />
+          <div className="mb-8 max-w-md">
+            <div className="text-[#c9a96e] text-xs tracking-[0.2em] uppercase mb-3">Serviços</div>
+            <div className="flex flex-wrap gap-2 text-white/75 text-sm">
+              {['Direito de Família', 'Direito Civil', 'Direito do Consumidor'].map(service => (
+                <span key={service} className="rounded-full border border-white/20 px-3 py-1.5">{service}</span>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-3 mb-8">
+            <WaButton label="Falar com a advogada" />
             <a
               href="#areas"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/30 text-white text-sm font-medium tracking-wide hover:border-[#c9a96e] hover:text-[#c9a96e] transition-all duration-300"
@@ -182,6 +191,9 @@ function Hero() {
               Nossas Áreas
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
+          </div>
+          <div className="text-white/75 text-sm md:text-base tracking-wide mb-6">
+            Divórcio <span className="text-[#c9a96e]">•</span> Inventário <span className="text-[#c9a96e]">•</span> Consumidor <span className="text-[#c9a96e]">•</span> Indenizações <span className="text-[#c9a96e]">•</span> Contratos
           </div>
           {/* Trust badges */}
           <div className="flex flex-wrap gap-6 text-white/50 text-xs tracking-wide">
@@ -195,11 +207,12 @@ function Hero() {
         </div>
 
         {/* Right: visual */}
-        <div className="hidden lg:flex flex-col items-center justify-center">
-          <div className="w-64 h-64 xl:w-80 xl:h-80 opacity-70">
-            <AnimatedScales />
+        <div className="flex items-center justify-center">
+          <div className="relative w-64 h-80 xl:w-80 xl:h-[30rem]">
+            <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" className="w-full h-full object-cover rounded-sm shadow-2xl" />
+            <div className="absolute -bottom-5 -left-5 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
-          <blockquote className="mt-6 text-center max-w-xs">
+          <blockquote className="hidden">
             <p className="text-white/60 text-sm italic font-serif leading-relaxed">"O Direito ganha sentido<br />quando serve às pessoas."</p>
             <cite className="block mt-3 text-[#c9a96e] text-xs tracking-widest uppercase not-italic">Patricia Cordeiro</cite>
           </blockquote>
@@ -399,7 +412,7 @@ function Diferenciais() {
           <div className="mt-10 lg:mt-16">
             <WaButton label="Consulta Gratuita" />
           </div>
-          <div className="mt-10 h-36 rounded-sm border-2 border-dashed border-[#c9a96e]/50 bg-white/5 flex flex-col items-center justify-center text-center px-6">
+          <div className="hidden">
             <span className="text-[#c9a96e] text-2xl mb-2">+</span>
             <span className="text-white/55 text-xs">Espaço para foto da Patricia</span>
           </div>

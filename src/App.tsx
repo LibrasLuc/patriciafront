@@ -292,7 +292,7 @@ function About() {
             Quem é Patricia?
           </h2>
           <p className="text-[#0d2340]/60 leading-relaxed mb-6">
-            Patricia Cordeiro Lima Mota Benze atua em Direito Civil, Direito de Família e Direito do Consumidor, oferecendo atendimento jurídico personalizado em Uberaba/MG e também de forma online.
+            Patricia Cordeiro Benze é advogada com 15 anos de atuação e mais de 500 processos acompanhados. Seu trabalho une escuta, clareza e estratégia para oferecer orientação jurídica responsável e personalizada.
           </p>
           <ul className="space-y-3 mb-8">
             {['Ética profissional', 'Atendimento humanizado', 'Estratégia e resultado', 'Sigilo e confidencialidade'].map((item, i) => (

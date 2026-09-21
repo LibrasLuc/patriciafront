@@ -272,6 +272,9 @@ function About() {
               <span className="text-[#0d2340]/30 text-xs mt-2">Adicione uma foto profissional aqui</span>
             </div>
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
+            <div className="mt-6 h-28 rounded-sm border border-dashed border-[#c9a96e]/40 bg-white flex items-center justify-center text-[#0d2340]/35 text-xs tracking-wide">
+              Espaço para foto do escritório
+            </div>
           </div>
         </FadeUp>
         <FadeUp delay={150}>
@@ -337,9 +340,9 @@ function Location() {
 
 /* ─── Practice Areas ─────────────────────────────────────────────── */
 const areas = [
-  { icon: '⚖️', title: 'Direito de Família', desc: 'Divórcios, inventários, partilha de bens, guarda, pensão e união estável.' },
-  { icon: '🏛️', title: 'Direito Civil', desc: 'Contratos, cobranças, indenizações e demais questões cíveis.' },
-  { icon: '🛒', title: 'Direito do Consumidor', desc: 'Negativação indevida, descontos indevidos e relações de consumo.' },
+  { title: 'Direito de Família', desc: 'Divórcios, inventários, partilha de bens, guarda, pensão e união estável.' },
+  { title: 'Direito Civil', desc: 'Contratos, cobranças, indenizações e demais questões cíveis.' },
+  { title: 'Direito do Consumidor', desc: 'Negativação indevida, descontos indevidos e relações de consumo.' },
 ]
 
 function Areas() {
@@ -359,7 +362,7 @@ function Areas() {
           {areas.map((a, i) => (
             <FadeUp key={i} delay={i * 60}>
               <div className="card-lift group p-8 border border-[#ede9e0] rounded-sm bg-[#f7f5f0] hover:bg-[#0d2340] cursor-pointer">
-                <div className="text-2xl mb-5">{a.icon}</div>
+                <div className="w-9 h-9 rounded-full border border-[#c9a96e] text-[#c9a96e] flex items-center justify-center text-xs font-semibold mb-5">0{i + 1}</div>
                 <h3 className="font-serif text-lg text-[#0d2340] group-hover:text-white font-semibold mb-2 transition-colors duration-300">
                   {a.title}
                 </h3>

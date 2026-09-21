@@ -1,0 +1,10 @@
+{
+  "description": "Premium legal landing page enhancing client trust with modern design, clear CTAs, animated visuals, and optimized for WhatsApp contact conversion.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

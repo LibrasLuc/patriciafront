@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, ReactNode } from 'react'
 import benzeLogo from './assets/benze-logo-transparent.png'
+import patriciaPhoto from './assets/patricia-photo.png'
 
 const WA = `https://wa.me/5534988138499?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Patricia Cordeiro - Advogada.')}`
 
@@ -268,11 +269,7 @@ function About() {
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <FadeUp>
           <div className="relative">
-            <div className="w-full h-[480px] rounded-sm border-2 border-dashed border-[#c9a96e]/50 bg-white flex flex-col items-center justify-center text-center px-8">
-              <div className="w-20 h-20 rounded-full border border-[#c9a96e]/60 flex items-center justify-center mb-5 text-[#c9a96e] text-3xl">+</div>
-              <span className="text-[#0d2340]/45 text-sm">Espaço reservado para foto da Patricia</span>
-              <span className="text-[#0d2340]/30 text-xs mt-2">Adicione uma foto profissional aqui</span>
-            </div>
+            <img src={patriciaPhoto} alt="Patricia Benze em seu escritório" className="w-full h-[480px] object-cover rounded-sm" />
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
         </FadeUp>

@@ -626,10 +626,10 @@ function Footer() {
         </div>
         <div className="pt-6 flex flex-col sm:flex-row justify-between gap-3 text-white/25 text-xs">
           <span>© 2026 Patricia Cordeiro — Advogada. Todos os direitos reservados.</span>
-          <div className="flex flex-wrap gap-4">
-            <a href="#" className="hover:text-white/50 transition-colors">Política de Privacidade</a>
-            <a href="https://librasluc.github.io/patriciafront/#inicio" target="_blank" rel="noopener noreferrer" className="hover:text-[#c9a96e] transition-colors">Desenvolvido por LucasLib</a>
-          </div>
+          <a href="#" className="hover:text-white/50 transition-colors">Política de Privacidade</a>
+        </div>
+        <div className="mt-5 text-center text-white/25 text-xs">
+          <a href="https://librasluc.github.io/portfolioLibras/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c9a96e] transition-colors">Desenvolvido por LucasLib</a>
         </div>
       </div>
     </footer>

@@ -18,6 +18,9 @@ export default defineConfig(({ mode }) => {
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
+      // O site é servido para navegadores atuais; evitar transpilações antigas
+      // reduz o JavaScript enviado no carregamento inicial.
+      target: 'es2022',
     },
     plugins: [
 react(),

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, ReactNode } from 'react'
 import benzeLogo from './assets/benze-logo-transparent.png'
-import patriciaPhoto from './assets/patricia-photo.png'
-import patriciaOfficePhoto from './assets/patricia-office-photo.png'
+import patriciaPhoto from './assets/patricia-photo.webp'
+import patriciaOfficePhoto from './assets/patricia-office-photo.webp'
 
 const WA = `https://wa.me/5534988138499?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Patricia Cordeiro - Advogada.')}`
 
@@ -127,7 +127,7 @@ function Nav() {
         <div className="hidden lg:block">
           <WaButton label="Consulta Gratuita" />
         </div>
-        <button className="lg:hidden text-[#0d2340] p-2" onClick={() => setOpen(!open)}>
+        <button aria-label={open ? 'Fechar menu' : 'Abrir menu'} aria-expanded={open} className="lg:hidden text-[#0d2340] p-2" onClick={() => setOpen(!open)}>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
             {open ? <path d="M6 18L18 6M6 6l12 12" /> : <path d="M3 6h18M3 12h18M3 18h18" />}
           </svg>
@@ -201,7 +201,7 @@ function Hero() {
         {/* Right: visual */}
         <div className="flex items-center justify-center">
           <div className="relative w-full max-w-lg overflow-hidden rounded-sm">
-            <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" className="block w-full h-auto rounded-sm shadow-2xl transition-transform duration-500 hover:scale-105" />
+            <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" width={1441} height={1082} fetchPriority="high" className="block w-full h-auto rounded-sm shadow-2xl transition-transform duration-500 hover:scale-105" />
             <div className="absolute -bottom-5 -right-5 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
           <blockquote className="hidden">
@@ -274,7 +274,7 @@ function About() {
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <FadeUp>
           <div className="relative">
-            <img src={patriciaOfficePhoto} alt="Patricia Benze em seu escritório" className="block w-full h-auto rounded-sm transition-transform duration-500 hover:scale-105" />
+            <img src={patriciaOfficePhoto} alt="Patricia Benze em seu escritório" width={1442} height={1081} loading="lazy" className="block w-full h-auto rounded-sm transition-transform duration-500 hover:scale-105" />
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
         </FadeUp>
@@ -421,7 +421,7 @@ function Diferenciais() {
                   <h3 className="text-white font-semibold text-base group-hover:text-[#c9a96e] transition-colors duration-300">
                     {d.title}
                   </h3>
-                  <p className="text-white/40 text-sm mt-1">{d.desc}</p>
+                  <p className="text-white/60 text-sm mt-1">{d.desc}</p>
                 </div>
               </div>
             </FadeUp>
@@ -617,7 +617,7 @@ function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-10 border-b border-white/10">
           <div>
             <Logo light />
-            <p className="text-white/40 text-xs leading-relaxed mt-4 max-w-xs">
+            <p className="text-white/60 text-xs leading-relaxed mt-4 max-w-xs">
               Atendimento jurídico personalizado em Uberaba — MG.
             </p>
           </div>
@@ -625,13 +625,13 @@ function Footer() {
             <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Links</div>
             <ul className="space-y-2">
               {['Home', 'Sobre', 'Áreas de Atuação', 'Depoimentos', 'FAQ'].map(l => (
-                <li key={l}><a href="#" className="text-white/40 text-xs hover:text-[#c9a96e] transition-colors">{l}</a></li>
+                <li key={l}><a href="#" className="text-white/60 text-xs hover:text-[#c9a96e] transition-colors">{l}</a></li>
               ))}
             </ul>
           </div>
           <div>
             <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Contato</div>
-            <ul className="space-y-2 text-white/40 text-xs">
+            <ul className="space-y-2 text-white/60 text-xs">
               <li>(34) 98813-8499</li>
               <li>R. Nacib Cury, 233</li>
               <li>São Sebastião, Uberaba — MG, 38060-380</li>

@@ -1,8 +1,8 @@
 {
   "specVersion": "1.0",
-  "host": {"displayName": "Patricia Cordeiro Benze - Advogada", "documentationUrl": "https://www.patriciacordeiroadv.com.br/"},
+  "host": {"displayName": "Patricia Cordeiro Benze - Advogada", "documentationUrl": "https://patriciacordeiroadv.com.br/"},
   "entries": [
-    {"identifier": "urn:air:patriciacordeiroadv.com.br:website:home", "displayName": "Site oficial da Patricia Cordeiro Benze", "type": "text/html", "url": "https://www.patriciacordeiroadv.com.br/"},
-    {"identifier": "urn:air:patriciacordeiroadv.com.br:website:sitemap", "displayName": "Mapa do site", "type": "application/xml", "url": "https://www.patriciacordeiroadv.com.br/sitemap.xml"}
+    {"identifier": "urn:air:patriciacordeiroadv.com.br:website:home", "displayName": "Site oficial da Patricia Cordeiro Benze", "type": "text/html", "url": "https://patriciacordeiroadv.com.br/"},
+    {"identifier": "urn:air:patriciacordeiroadv.com.br:website:sitemap", "displayName": "Mapa do site", "type": "application/xml", "url": "https://patriciacordeiroadv.com.br/sitemap.xml"}
   ]
 }

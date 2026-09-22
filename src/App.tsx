@@ -609,21 +609,21 @@ function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-10 border-b border-white/10">
           <div>
             <Logo light />
-            <p className="text-white/60 text-xs leading-relaxed mt-4 max-w-xs">
+            <p className="text-white/75 text-xs leading-relaxed mt-4 max-w-xs">
               Atendimento jurídico personalizado em Uberaba — MG.
             </p>
           </div>
           <div>
-            <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Links</div>
+            <div className="text-white/75 text-xs uppercase tracking-widest mb-4">Links</div>
             <ul className="space-y-2">
               {['Home', 'Sobre', 'Áreas de Atuação', 'Depoimentos', 'FAQ'].map(l => (
-                <li key={l}><a href="#" className="text-white/60 text-xs hover:text-[#c9a96e] transition-colors">{l}</a></li>
+                <li key={l}><a href="#" className="text-white/75 text-xs hover:text-[#c9a96e] transition-colors">{l}</a></li>
               ))}
             </ul>
           </div>
           <div>
             <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Contato</div>
-            <ul className="space-y-2 text-white/60 text-xs">
+            <ul className="space-y-2 text-white/75 text-xs">
               <li>(34) 98813-8499</li>
               <li>R. Nacib Cury, 233</li>
               <li>São Sebastião, Uberaba — MG, 38060-380</li>

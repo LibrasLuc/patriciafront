@@ -622,7 +622,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Contato</div>
+            <div className="text-white/75 text-xs uppercase tracking-widest mb-4">Contato</div>
             <ul className="space-y-2 text-white/75 text-xs">
               <li>(34) 98813-8499</li>
               <li>R. Nacib Cury, 233</li>
@@ -631,11 +631,11 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="pt-6 flex flex-col sm:flex-row justify-between gap-3 text-white/25 text-xs">
+        <div className="pt-6 flex flex-col sm:flex-row justify-between gap-3 text-white/75 text-xs">
           <span>© 2026 Patricia Cordeiro — Advogada. Todos os direitos reservados.</span>
-          <a href="#" className="hover:text-white/50 transition-colors">Política de Privacidade</a>
+          <a href="#" className="text-white/75 hover:text-white transition-colors">Política de Privacidade</a>
         </div>
-        <div className="mt-5 text-center text-white/25 text-xs">
+        <div className="mt-5 text-center text-white/75 text-xs">
           <a href="https://librasluc.github.io/portfolioLibras/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c9a96e] transition-colors">Desenvolvido por LucasLib</a>
         </div>
       </div>

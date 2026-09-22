@@ -1,8 +1,8 @@
 {
-  "title": "Patricia Benze",
-  "description": "Premium legal landing page enhancing client trust with modern design, clear CTAs, animated visuals, and optimized for WhatsApp contact conversion.",
+  "title": "Advogada em Uberaba | Família, Inventário, Divórcio e Consumidor",
+  "description": "Patricia Cordeiro Benze é advogada em Uberaba, com atuação em Direito de Família e Sucessões, inventário, divórcio, contratos, seguros, indenizações e Direito do Consumidor.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://librasluc.github.io/patriciafront/sitemap.xml
+Sitemap: https://www.patriciacordeiroadv.com.br/sitemap.xml
+Agentmap: https://www.patriciacordeiroadv.com.br/.well-known/ai-catalog.json

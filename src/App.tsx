@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, ReactNode } from 'react'
-import benzeLogo from './assets/benze-logo-transparent.png'
+import benzeLogo from './assets/benze-logo-transparent.webp'
 import patriciaPhoto from './assets/patricia-photo.webp'
 import patriciaOfficePhoto from './assets/patricia-office-photo.webp'
 
@@ -85,7 +85,7 @@ function WaIcon({ size = 18 }: { size?: number }) {
 function Logo({ light = false }: { light?: boolean }) {
   return (
     <a href="#inicio" aria-label="Voltar ao início">
-      <img src={benzeLogo} alt="Benze Advocacia" className={`h-12 w-auto object-contain select-none rounded-sm ${light ? 'bg-white' : ''}`} style={{ maxWidth: 220 }} />
+      <img src={benzeLogo} alt="Benze Advocacia" width={2172} height={724} className={`h-12 w-auto object-contain select-none rounded-sm ${light ? 'bg-white' : ''}`} style={{ maxWidth: 220 }} />
     </a>
   )
 }
@@ -149,15 +149,7 @@ function Nav() {
 function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden bg-[#0d2340]">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1600&h=900&fit=crop&auto=format"
-          alt=""
-          className="w-full h-full object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0d2340] via-[#0d2340]/85 to-[#0d2340]/40" />
-      </div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,rgba(201,169,110,0.14),transparent_32%),linear-gradient(115deg,#0d2340_0%,#102b4e_58%,#0d2340_100%)]" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 pt-24 pb-16 grid lg:grid-cols-2 gap-12 items-center w-full">
         {/* Left: copy */}

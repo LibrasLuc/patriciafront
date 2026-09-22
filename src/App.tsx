@@ -166,7 +166,7 @@ function Hero() {
             <div className="w-8 h-px bg-[#c9a96e]" />
             <span className="text-[#c9a96e] text-xs tracking-[0.3em] uppercase font-medium">Patricia Cordeiro Benze</span>
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-semibold leading-tight mb-6">
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white font-semibold leading-tight mb-6">
             Soluções jurídicas para proteger seus direitos,<br /> sua família e seu patrimônio.
           </h1>
           <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 max-w-md">

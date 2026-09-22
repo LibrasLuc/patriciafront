@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, ReactNode } from 'react'
 import benzeLogo from './assets/benze-logo-transparent.png'
 import patriciaPhoto from './assets/patricia-photo.png'
+import patriciaOfficePhoto from './assets/patricia-office-photo.png'
 
 const WA = `https://wa.me/5534988138499?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Patricia Cordeiro - Advogada.')}`
 
@@ -273,7 +274,7 @@ function About() {
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <FadeUp>
           <div className="relative">
-            <img src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=600&h=720&fit=crop&auto=format" alt="Justiça e advocacia" className="w-full h-[480px] object-cover rounded-sm" />
+            <img src={patriciaOfficePhoto} alt="Patricia Benze em seu escritório" className="w-full h-[480px] object-cover object-[25%_center] rounded-sm transition-transform duration-500 hover:scale-105" />
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
         </FadeUp>
@@ -283,7 +284,7 @@ function About() {
             Quem é Patricia?
           </h2>
           <p className="text-[#0d2340]/60 leading-relaxed mb-6">
-            Patricia Cordeiro Benze é advogada com 15 anos de atuação e mais de 500 processos acompanhados. Seu trabalho une escuta, clareza e estratégia para oferecer orientação jurídica responsável e personalizada.
+            Com mais de 15 anos de atuação e mais de 500 processos conduzidos, Patrícia é pós-graduada em Direito de Família e Sucessões e possui ampla experiência na prevenção e solução de conflitos. Sua atuação prioriza, sempre que possível, soluções seguras e eficientes sem a necessidade de litígio, especialmente em divórcios, inventários e questões patrimoniais. Também atua na elaboração e análise de contratos e em demandas relacionadas ao Direito do Consumidor, seguros e indenizações, buscando soluções jurídicas personalizadas para cada situação.
           </p>
           <ul className="space-y-3 mb-8">
             {['Ética profissional', 'Atendimento humanizado', 'Estratégia e resultado', 'Sigilo e confidencialidade'].map((item, i) => (

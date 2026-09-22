@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, ReactNode } from 'react'
 import benzeLogo from './assets/benze-logo-display.webp'
-import patriciaPhoto from './assets/patricia-photo-display.webp'
-import patriciaOfficePhoto from './assets/patricia-office-photo-display.webp'
+import patriciaPhoto from './assets/patricia-photo-quality.webp'
+import patriciaOfficePhoto from './assets/patricia-office-photo-quality.webp'
 
 const WA = `https://wa.me/5534988138499?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Patricia Cordeiro - Advogada.')}`
 
@@ -193,7 +193,7 @@ function Hero() {
         {/* Right: visual */}
         <div className="flex items-center justify-center">
           <div className="relative w-full max-w-lg overflow-hidden rounded-sm">
-            <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" width={640} height={480} fetchPriority="high" decoding="async" className="block w-full h-auto rounded-sm shadow-2xl transition-transform duration-500 hover:scale-105" />
+            <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" width={768} height={576} fetchPriority="high" decoding="async" className="block w-full h-auto rounded-sm shadow-2xl transition-transform duration-500 hover:scale-105" />
             <div className="absolute -bottom-5 -right-5 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
           <blockquote className="hidden">
@@ -266,7 +266,7 @@ function About() {
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <FadeUp>
           <div className="relative">
-            <img src={patriciaOfficePhoto} alt="Patricia Benze em seu escritório" width={640} height={480} loading="lazy" decoding="async" className="block w-full h-auto rounded-sm transition-transform duration-500 hover:scale-105" />
+            <img src={patriciaOfficePhoto} alt="Patricia Benze em seu escritório" width={768} height={576} loading="lazy" decoding="async" className="block w-full h-auto rounded-sm transition-transform duration-500 hover:scale-105" />
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
         </FadeUp>

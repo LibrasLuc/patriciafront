@@ -200,8 +200,8 @@ function Hero() {
 
         {/* Right: visual */}
         <div className="flex items-center justify-center">
-          <div className="relative w-full max-w-lg aspect-[4/3] overflow-hidden rounded-sm">
-            <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" className="w-full h-full object-contain rounded-sm shadow-2xl transition-transform duration-500 hover:scale-105" />
+          <div className="relative w-full max-w-lg overflow-hidden rounded-sm">
+            <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" className="block w-full h-auto rounded-sm shadow-2xl transition-transform duration-500 hover:scale-105" />
             <div className="absolute -bottom-5 -right-5 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
           <blockquote className="hidden">
@@ -274,7 +274,7 @@ function About() {
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <FadeUp>
           <div className="relative">
-            <img src={patriciaOfficePhoto} alt="Patricia Benze em seu escritório" className="w-full aspect-[4/3] object-contain rounded-sm transition-transform duration-500 hover:scale-105" />
+            <img src={patriciaOfficePhoto} alt="Patricia Benze em seu escritório" className="block w-full h-auto rounded-sm transition-transform duration-500 hover:scale-105" />
             <div className="absolute -bottom-6 -right-6 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
         </FadeUp>

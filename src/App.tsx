@@ -636,7 +636,8 @@ function Footer() {
           <a href="#" className="text-white/75 hover:text-white transition-colors">Política de Privacidade</a>
         </div>
         <div className="mt-5 text-center text-white/75 text-xs">
-          <a href="https://librasluc.github.io/portfolioLibras/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c9a96e] transition-colors">Desenvolvido por LucasLib</a>
+          <span>Desenvolvido por </span>
+          <a href="https://ethersun.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c9a96e] transition-colors">Ethersun</a>
         </div>
       </div>
     </footer>

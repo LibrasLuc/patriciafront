@@ -9,6 +9,7 @@ vite.config.*.timestamp-*
 *-debug.log*
 logs/
 *.log
+patricia_*.zip
 .claude-replay.*
 .tmp-*
 /.figma/design-context/

@@ -3,7 +3,7 @@ import benzeLogo from './assets/benze-logo-display.webp'
 import patriciaPhoto from './assets/patricia-photo.png'
 import patriciaOfficePhoto from './assets/patricia-office-photo.png'
 
-const WA = `https://wa.me/5534988138499?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Patricia Cordeiro - Advogada.')}`
+const WA = `https://wa.me/5534998858499?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Patricia Cordeiro - Advogada.')}`
 
 /* ─── Scroll fade helper ───────────────────────────────────────── */
 function FadeUp({ children, delay = 0, className = '' }: { children: ReactNode; delay?: number; className?: string }) {
@@ -578,13 +578,13 @@ function FinalCTA() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <WaButton label="Fale no WhatsApp" />
             <a
-              href="tel:+5534988138499"
+              href="tel:+5534998858499"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-white/30 text-white text-sm font-medium tracking-wide hover:border-[#c9a96e] hover:text-[#c9a96e] transition-all duration-300"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.26h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18z"/>
               </svg>
-              (34) 98813-8499
+              (34) 99885-8499
             </a>
           </div>
           <div className="flex justify-center gap-8 mt-10 text-white/30 text-xs tracking-wide">
@@ -624,7 +624,7 @@ function Footer() {
           <div>
             <div className="text-white/75 text-xs uppercase tracking-widest mb-4">Contato</div>
             <ul className="space-y-2 text-white/75 text-xs">
-              <li>(34) 98813-8499</li>
+              <li>(34) 99885-8499</li>
               <li>R. Nacib Cury, 233</li>
               <li>São Sebastião, Uberaba — MG, 38060-380</li>
               <li><a className="text-[#c9a96e] hover:text-white transition-colors" href="https://www.google.com/maps/search/?api=1&query=R.%20Nacib%20Cury%2C%20233%2C%20Uberaba%20-%20MG" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a></li>

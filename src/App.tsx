@@ -193,7 +193,7 @@ function Hero() {
         {/* Right: visual */}
         <div className="flex items-center justify-center">
           <div className="relative w-full max-w-lg overflow-hidden rounded-sm">
-            <img src={patriciaPhoto} alt="Patricia Cordeiro Benze, advogada" width={1441} height={1082} fetchPriority="high" decoding="async" className="block w-full h-auto rounded-sm shadow-2xl transition-transform duration-500 hover:scale-105" />
+            <img src={`${patriciaPhoto}?v=20261113b`} alt="Patricia Cordeiro Benze, advogada" width={1441} height={1082} fetchPriority="high" decoding="async" className="block w-full h-auto rounded-sm shadow-2xl transition-transform duration-500 hover:scale-105" />
             <div className="absolute -bottom-5 -right-5 w-24 h-24 border-2 border-[#c9a96e] rounded-sm" />
           </div>
           <blockquote className="hidden">
